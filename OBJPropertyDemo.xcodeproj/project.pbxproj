@@ -15,6 +15,8 @@
 		4721C2141C201B32004E24FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4721C2121C201B32004E24FA /* LaunchScreen.storyboard */; };
 		4721C21F1C201B33004E24FA /* OBJPropertyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4721C21E1C201B33004E24FA /* OBJPropertyDemoTests.m */; };
 		4721C22A1C201B33004E24FA /* OBJPropertyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4721C2291C201B33004E24FA /* OBJPropertyDemoUITests.m */; };
+		4721C23A1C201B83004E24FA /* NSObject+ReflectProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4721C2391C201B83004E24FA /* NSObject+ReflectProperty.m */; };
+		4721C23E1C201CF8004E24FA /* ChinaTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4721C23D1C201CF8004E24FA /* ChinaTeacher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		4721C2251C201B33004E24FA /* OBJPropertyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBJPropertyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4721C2291C201B33004E24FA /* OBJPropertyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBJPropertyDemoUITests.m; sourceTree = "<group>"; };
 		4721C22B1C201B33004E24FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4721C2381C201B83004E24FA /* NSObject+ReflectProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ReflectProperty.h"; sourceTree = "<group>"; };
+		4721C2391C201B83004E24FA /* NSObject+ReflectProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ReflectProperty.m"; sourceTree = "<group>"; };
+		4721C23C1C201CF8004E24FA /* ChinaTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChinaTeacher.h; sourceTree = "<group>"; };
+		4721C23D1C201CF8004E24FA /* ChinaTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChinaTeacher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		4721C2031C201B32004E24FA /* OBJPropertyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4721C23B1C201CBC004E24FA /* TestClass */,
+				4721C2371C201B3F004E24FA /* ObjectExtension */,
 				4721C2071C201B32004E24FA /* AppDelegate.h */,
 				4721C2081C201B32004E24FA /* AppDelegate.m */,
 				4721C20A1C201B32004E24FA /* ViewController.h */,
@@ -138,6 +146,24 @@
 				4721C22B1C201B33004E24FA /* Info.plist */,
 			);
 			path = OBJPropertyDemoUITests;
+			sourceTree = "<group>";
+		};
+		4721C2371C201B3F004E24FA /* ObjectExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4721C2381C201B83004E24FA /* NSObject+ReflectProperty.h */,
+				4721C2391C201B83004E24FA /* NSObject+ReflectProperty.m */,
+			);
+			name = ObjectExtension;
+			sourceTree = "<group>";
+		};
+		4721C23B1C201CBC004E24FA /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				4721C23C1C201CF8004E24FA /* ChinaTeacher.h */,
+				4721C23D1C201CF8004E24FA /* ChinaTeacher.m */,
+			);
+			name = TestClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4721C20C1C201B32004E24FA /* ViewController.m in Sources */,
+				4721C23E1C201CF8004E24FA /* ChinaTeacher.m in Sources */,
 				4721C2091C201B32004E24FA /* AppDelegate.m in Sources */,
+				4721C23A1C201B83004E24FA /* NSObject+ReflectProperty.m in Sources */,
 				4721C2061C201B32004E24FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
